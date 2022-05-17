@@ -31,10 +31,11 @@ numbers = list(range(1, 11))
 
 #For each number in numbers:
 for number1 in numbers:
-    print('{:-^28}'.format(f'Multiplication Table {number1}'))
+    print('{:-^27}'.format(f'Multiplication Table {number1:02}'))
     print()
     for number2 in numbers:
         result = number1 * number2
-        print('{:^28}'.format(f'{number1} x {number2} = {result}'))
+        print('{:^27}'.format(f'{number1} x {number2} = {result}'))
     
-    print('#' * 28)
+    print('#' * 27)
+    print('\n')
