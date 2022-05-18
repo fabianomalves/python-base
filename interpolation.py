@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+"""Script with a template. Using for automatizing an email response.
+"""
+__version__ = "0.0.1"
+__author__ = "Fabiano Alves"
 
 
 email_template = """
