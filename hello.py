@@ -23,14 +23,15 @@ __license__ = "Unlicense"
 import os
 
 current_language = os.getenv('LANG','en_US')[:5]
-message = 'Hello World'
+message = {
+    'pt_BR': 'Olá Mundo.',
+    'en_US': 'Hello World.',
+    'it_IT': 'Ciao Mondo.',
+    'es_SP': 'Hola Mundo.',
+    'fr_FR': 'Bonjour Monde.',
+}
 
-if current_language == 'pt_BR':
-    message = 'Olá Mundo'
-elif current_language == 'it_IT':
-    message = 'Ciao Mondo'
-elif current_language == 'es_SP':
-    message = 'Hola Mundo'
-elif current_language == 'fr_FR':
-    message = 'Bonjour Monde'
-print (message)
+# sets (Hash Table) - O(1) Constant time
+
+
+print (message[current_language])
