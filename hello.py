@@ -16,7 +16,7 @@ Acting:
     or
     ./hello.py
 """
-__version__ = "0.0.1"
+__version__ = "0.1.2"
 __author__ = "Fabiano Alves"
 __license__ = "Unlicense"
 
@@ -31,6 +31,6 @@ elif current_language == 'it_IT':
     message = 'Ciao Mondo'
 elif current_language == 'es_SP':
     message = 'Hola Mundo'
-elif current_language == 'fr.FR':
+elif current_language == 'fr_FR':
     message = 'Bonjour Monde'
 print (message)
